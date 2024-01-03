@@ -1,1 +1,16 @@
-/home/anhnguyen/.config/starship.toml
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+[character]
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red)'
+[java]
+format = 'via [${symbol}(${version} )](blue bold)'
+
+[git_branch]
+format = 'on [$symbol$branch( : $remote_branch)]($style) ' 
+
+[package]
+disabled = true
